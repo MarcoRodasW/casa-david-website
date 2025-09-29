@@ -1,0 +1,8 @@
+{
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode"
+      },
+      "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+}
