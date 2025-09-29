@@ -1,0 +1,42 @@
+---
+import Image from "astro/components/Image.astro";
+import ParallaxBackground from "./ParallaxBackground";
+import ChurchLogo from "./public/assets/church_logo.jpg";
+---
+
+<section
+  class="relative flex h-screen items-end justify-center overflow-hidden"
+>
+  <ParallaxBackground
+    imageSrc="/assets/church_hero_image.jpg"
+    alt="Church Hero Background"
+    speed={0.5}
+    client:load
+  />
+  <div
+    class="absolute inset-0 z-15 bg-gradient-to-t from-black via-black/55 to-transparent"
+  >
+  </div>
+  <div
+    class="relative z-20 container mx-auto flex w-full items-center justify-between px-4 pb-10 md:px-6 md:pb-12 lg:px-8 lg:pb-16"
+  >
+    <div class="relative z-10 max-w-3xl text-white">
+      <h1 class="text-4xl font-bold">Casa de David Puerto Cortés</h1>
+      <h2 class="font-semibold whitespace-nowrap">
+        Sin techos, Sin Límites, Sin Fronteras
+      </h2>
+      <p class="mt-2 text-lg leading-relaxed opacity-90">
+        Un lugar de adoración, comunidad y crecimiento espiritual para todos
+      </p>
+    </div>
+
+    {/* Right Side Logo */}
+    <div class="relative z-10 hidden rounded-lg p-6 md:block">
+      <Image
+        src={ChurchLogo}
+        alt="Church Logo"
+        class="h-48 w-48 object-contain"
+      />
+    </div>
+  </div>
+</section>
