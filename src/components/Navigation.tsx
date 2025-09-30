@@ -30,16 +30,18 @@ export default function Navigation() {
           />
         </a>
         <ul class="flex flex-row items-center gap-8">
-          {navigation_items.map((item) => (
-            <li>
-              <a
-                href={item.href}
-                class={`rounded-md px-3 py-2 text-lg font-semibold transition-all duration-300 ${isScrolled ? "text-black hover:bg-gray-100" : "text-white hover:bg-white/10"}`}
-              >
-                {item.name}
-              </a>
-            </li>
-          ))}
+          {navigation_items
+            .filter((item) => item.show)
+            .map((item) => (
+              <li>
+                <a
+                  href={item.href}
+                  class={`rounded-md px-3 py-2 text-lg font-semibold transition-all duration-300 ${isScrolled ? "text-black hover:bg-gray-100" : "text-white hover:bg-white/10"}`}
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
         </ul>
       </div>
     </nav>
