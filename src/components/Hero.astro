@@ -1,7 +1,6 @@
 ---
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
 import ParallaxBackground from "./ParallaxBackground";
-import ChurchLogo from "./public/assets/church_logo.jpg";
 import { NavigationLinks } from "../lib/types";
 ---
 
@@ -49,8 +48,10 @@ import { NavigationLinks } from "../lib/types";
     {/* Right Side Logo */}
     <div class="relative z-10 hidden rounded-lg p-6 md:block">
       <Image
-        src={ChurchLogo}
+        src="/assets/church_logo.jpg"
         alt="Church Logo"
+        width="192"
+        height="192"
         class="h-48 w-48 object-contain"
       />
     </div>

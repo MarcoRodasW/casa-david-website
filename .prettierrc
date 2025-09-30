@@ -4,12 +4,14 @@
     {
       "files": "*.astro",
       "options": {
+        "printWidth": 60,
         "parser": "astro"
       }
     },
     {
       "files": "*.tsx",
       "options": {
+        "printWidth": 60,
         "parser": "typescript"
       }
     }
