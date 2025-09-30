@@ -1,14 +1,23 @@
 @import "tailwindcss";
 
+:root{
+  --background: #f7f3eb;
+  --background-foreground: #faf7ed;
+}
+
+
+@theme{
+  --color-background-primary: var(--background);
+  --color-background-foreground: var(--background-foreground);
+}
 
 @theme inline {
   --font-sans: var(--font-inter);
 }
 
 @layer base{
-    html{
+  html{
         scroll-behavior: smooth;
-        /* Ensure base font family is Inter via Tailwind theme var */
-
+        background-color: var(--color-background);  
     }
 }
