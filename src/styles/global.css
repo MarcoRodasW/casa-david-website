@@ -2,8 +2,15 @@
 
 :root{
   --background: #f7f3eb;
-  --background-foreground: #faf7ed;
+  --background-foreground: #1a1b1e;
   --primary: #1e3a8a;
+  --primary-foreground: #f0f8ff;
+  --secondary: #e0e7ed;
+  --secondary-foreground: #293b5a;
+  --card-background: #ffffff;
+  --card-background-foreground: #1a1b1e;
+  --muted: #e0e7ed;
+  --muted-foreground: #6f7f9a;
 }
 
 
@@ -11,6 +18,13 @@
   --color-background-primary: var(--background);
   --color-background-foreground: var(--background-foreground);
   --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-card-background: var(--card-background);
+  --color-card-background-foreground: var(--card-background-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
 }
 
 @theme inline {
